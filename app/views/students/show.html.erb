@@ -1,1 +1,5 @@
-<%= @student.name + " of house " + @student.house.name + "." %>
+<% if @student.house %>
+  <%= @student.name + " is in house " + @student.house.name + "." %>
+<% else %>
+  <%= @student.name + " has not yet been assigned a house." %>
+<% end %>
