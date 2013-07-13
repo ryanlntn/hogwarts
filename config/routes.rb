@@ -5,6 +5,6 @@ Hogwarts::Application.routes.draw do
   get '/houses/:id', to: 'houses#show', as: 'house'
   get '/students', to: 'students#index', as: 'students'
   post '/students', to: 'students#create', as: 'students'
-  get '/students/new', to: 'students#new'
+  get '/students/new', to: 'students#new', as: 'new_student'
   get '/students/:id', to: 'students#show', as: 'student'
 end
