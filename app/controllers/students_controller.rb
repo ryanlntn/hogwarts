@@ -15,7 +15,7 @@ class StudentsController < ApplicationController
     @student = Student.new(params[:student])
 
     if @student.save
-      redirect_to 'index'
+      redirect_to students_path
     else
       render 'new'
     end

@@ -4,7 +4,7 @@ Hogwarts::Application.routes.draw do
   get '/houses', to: 'houses#index', as: 'houses'
   get '/houses/:id', to: 'houses#show', as: 'house'
   get '/students', to: 'students#index', as: 'students'
+  post '/students', to: 'students#create', as: 'students'
   get '/students/new', to: 'students#new'
-  post '/students/create', to: 'students#create'
   get '/students/:id', to: 'students#show', as: 'student'
 end
