@@ -13,6 +13,7 @@ class StudentsController < ApplicationController
 
   def create
     @student = Student.new(params[:student])
+    @student.sorting_hat
 
     if @student.save
       redirect_to students_path
